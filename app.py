@@ -48,6 +48,7 @@ input_data = np.array([
     ca,
     thal_map[thal]
 ]).reshape(1, -1)
+input_data = np.array(input_data, dtype=np.float32).reshape(1, -1)
 
 # Prediction
 if st.button("Predict"):
